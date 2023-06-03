@@ -1,46 +1,127 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exercício | Modulo 12</title>
+  <title>Bootstrap Basic</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
 <body>
-  <header class="container-fluid bg-primary py-2">
-    <h1 class="text-center">Bootstrap EBAC</h1>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <h1 class="navbar-brand" href="#">Bootstrap Basic</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./cadastro.html">Cadastro</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <section class="container pt-5">
-    <h2 class="display-4 mb-5 text-center">Faça seu cadastro conosco</h2>
-    <div class="row">
-      <div class="col-12 order-lg-2 col-lg-7 text-center">
-        <img class="img-fluid w-75" src="./img/forms.svg" alt="">
+  <main>
+    <div class="row container-fluid mx-auto mx-lg-0 p-0">
+      <div class="col-12 col-lg-6 p-0">
+        <img class="img-fluid" src="https://placehold.co/800x600" alt="Servicos da empresa">
       </div>
 
-      <form class="col-12 col-lg-5 order-lg-1 py-5 py-lg-0">
-        <h3 class="mb-3">Formulário de Cadastro</h3>
-        <div class="mb-2">
-          <label for="nome" class="form-label">Nome</label>
-          <input type="text" class="form-control" id="nome">
+      <div class="col-12 col-lg-6 px-2 px-lg-5 d-flex flex-column align-items-start justify-content-center">
+        <h2 class="display-5">Melhor serviço da região</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum sunt consequatur laudantium perferendis, adipisci id voluptate quia consectetur assumenda ut minima labore, voluptates error alias nobis facilis numquam repellendus cupiditate.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, molestiae quia. Ab ipsa repellendus porro quisquam. Nulla veniam pariatur labore!</p>
+        <p class="fs-4">Porque nos contratar?</p>
+        <ul class="list-group list-group-flush w-100 mb-3">
+          <li class="list-group-item">Empresa consolidada</li>
+          <li class="list-group-item">Anos de experiência</li>
+          <li class="list-group-item">Produtos e serviços de qualidade</li>
+          <li class="list-group-item">Preço justo</li>
+
+        </ul>
+
+        <a class="btn btn-primary" href="#">Fale conosco</a>
+      </div>
+    </div>
+  </main>
+
+  <section class="bg-body-tertiary container-fluid py-5">
+    <h2 class="display-3 mb-3 text-center">Nossos serviços</h2>
+    <div class="d-flex align-items-center justify-content-center flex-wrap gap-5 py-5">
+
+      <div class="card" style="width: 18rem;">
+        <img src="https://placehold.co/250x250" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dicta ex id asperiores, voluptate perferendis.</p>
         </div>
-        <div class="mb-2">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email">
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="https://placehold.co/250x250" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dicta ex id asperiores, voluptate perferendis.</p>
         </div>
-        <div class="mb-3">
-          <label for="telefone" class="form-label">Telefone</label>
-          <input type="tel" class="form-control" id="telefone">
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="https://placehold.co/250x250" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dicta ex id asperiores, voluptate perferendis.</p>
         </div>
-        <button type="submit" class="btn btn-primary">Cadastrar</button>
-      </form>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="https://placehold.co/250x250" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dicta ex id asperiores, voluptate perferendis.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="container-fluid">
+    <div class="row container-fluid mx-auto mx-lg-0 p-0">
+      <div class="col-12 col-lg-6 px-2 px-lg-5 d-flex flex-column align-items-start justify-content-center gap-1">
+        <h2 class="display-5">Fale conosco</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi illo a nobis, dignissimos sapiente dicta temporibus expedita quo vero possimus! Officiis aliquam deserunt consequuntur voluptatibus ipsum, inventore magnam excepturi earum.</p>
+
+        <span>Rua logo ali, 85, centro.</span>
+        <span class="mb-2">Maceió-AL</span>
+
+
+        <a class="btn btn-primary" href="#">Fale conosco</a>
+      </div>
+
+      <div class="col-12 col-lg-6 p-0">
+        <img class="img-fluid" src="https://placehold.co/800x600" alt="Empresa">
+      </div>
+
+
     </div>
   </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  <footer class="bg-body-tertiary py-3">
+    <div class="container-fluid d-flex justify-content-between">
+      <span class="h5 my-auto">Bootstrap Basic</span>
+      <p class="my-auto">Alguns direitos reservados.</p>
+    </div>
+  </footer>
 </body>
 
 </html>
